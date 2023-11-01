@@ -3,7 +3,7 @@ import React from 'react';
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
   const handleClick = async () => {
     // Fetch movie details from the OMDB API using the imdbID
-    const omdbAPI = `http://www.omdbapi.com?apikey=b6003d8a&i=${imdbID}`;
+    const omdbAPI = `https://www.omdbapi.com?apikey=b6003d8a&i=${imdbID}`;
     try {
       const response = await fetch(omdbAPI);
       const data = await response.json();

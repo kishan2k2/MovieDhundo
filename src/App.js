@@ -9,7 +9,9 @@ const API_URL = "https://www.omdbapi.com?apikey=b6003d8a";
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
-
+  useEffect(() => {
+    document.body.style.zoom = "80%";
+  }, []);
   useEffect(() => {
     searchMovies("Batman");
   }, []);

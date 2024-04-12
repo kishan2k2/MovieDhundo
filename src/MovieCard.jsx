@@ -15,7 +15,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
         alert(`https://vidsrc.in/embed/movie/${data.imdbID} not found`);
       }
     } catch (error) {
-      console.error("Error fetching movie details", error);
+      console.error("Error fetching movie  details", error);
     }
   };
   return (

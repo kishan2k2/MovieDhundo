@@ -10,7 +10,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
       console.log(data)
       if (data && data.imdbID) {
         // Redirect to the specific URL with the retrieved IMDb ID
-        window.location.href = `https://vidsrc.in/embed/movie/${data.imdbID}`;
+        window.location.href = `https://vidsrc.xyz/embed/movie/${data.imdbID}`;
       } else {
         alert(`https://vidsrc.in/embed/movie/${data.imdbID} not found`);
       }
